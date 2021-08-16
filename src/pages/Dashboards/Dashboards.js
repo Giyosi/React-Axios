@@ -2,6 +2,7 @@ import React from 'react'
 import { useParams } from 'react-router-dom'
 import Container from '../../container/Container';
 import Home from '../Home';
+import Todos from '../Todos';
 import Users from '../Users';
 import DashboardsWrapper from './DashboardsWrapper'
 
@@ -13,7 +14,7 @@ console.log(page);
             <DashboardsWrapper>
                 {page === "home" && <Home />}
                 {page === "users" && <Users />}
-                {/* {page === "todos" && <Todos />} */}
+                {page === "todos" && <Todos />}
                 {/* {page === "albums" && <Albums />} */}
                 {/* {page === "photos" && <Photos />} */}
                 {/* {page === "posts" && <Posts />} */}

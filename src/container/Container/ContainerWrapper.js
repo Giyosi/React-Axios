@@ -5,15 +5,24 @@ const ContainerWrapper = styled.div`
     display: flex;
 
     .sidebar{
-        width: 300px;
-        padding: ${padding};
+        width: 100px;
+        padding: 20px;
+        overflow: hidden;
         background-color: rgba(136,0,255,1);
         height: 100vh;
         position: sticky;
         top: 0px;
+        transition: 0.3s;
+
+        &.show {
+            width: 300px;
+            padding: ${padding};
+            
+        }
 
         ul.menu {
             li {
+                min-width: 30px;
                 a {
                     padding: 10px 20px;
                     border-radius: 10px;
@@ -30,14 +39,15 @@ const ContainerWrapper = styled.div`
                         transition: 0.2s;
                         transform: scale(1.1);
                     }
-
                     &.active {
                         background-color: rgba(132,92,255,1);
                         color: white;
                         transition: 0.3s;
                         transform: scale(1.1);
                     }
+                    
                 }
+                
             }
         }
     }
