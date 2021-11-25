@@ -31,7 +31,7 @@ const Users = () => {
                                 <TableCell>name</TableCell>
                                 <TableCell>username</TableCell>
                                 <TableCell>email</TableCell>
-                                <TableCell>address</TableCell>
+                                <TableCell>website</TableCell>
                             </TableRow>
                         </TableHead>
                         <TableBody>
@@ -42,7 +42,7 @@ const Users = () => {
                                         <TableCell>{v.name}</TableCell>
                                         <TableCell>{v.username}</TableCell>
                                         <TableCell>{v.email}</TableCell>
-                                        <TableCell>{v.address.street}</TableCell>
+                                        <TableCell>{v.website}</TableCell>
                                     </TableRow>
 
                                 )
